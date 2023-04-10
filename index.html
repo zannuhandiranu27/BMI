@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <title>BMI Calculator</title>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex min-vh-100 align-items-center">
+            <div class="col-md-6 text-dark mt-5">
+                <h1>Body Mass Index Calculator</h1>
+                <p>Enter your Height: <input type="text" id="height" maxlength="3" placeholder="Example = 167 Cm"
+                        style="width: 200px;" onkeypress="return event.charCode >= 48 && event.charCode <= 57" /></p>
+                <p>Enter your Weight: <input type="text" id="weight" maxlength="3" placeholder="Example = 60 Kg"
+                        style="width: 200px;" onkeypress="return event.charCode >= 48 && event.charCode <= 57" /></p>
+                <input type="button" value="Check" onclick="calculateBMI();"
+                    style="background-color: green;color: aliceblue;">
+                <input type="reset" value="Reset" onclick="resetForm();"
+                    style="background-color: red;color: aliceblue;">
+                <h1>Your BMI is: <span id="output">?</span></h1>
+                <h2>This means you are: <span id="comment">?</span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
